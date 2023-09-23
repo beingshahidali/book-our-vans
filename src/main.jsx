@@ -12,8 +12,12 @@ import HostVans from "../pages/Host/HostVans"
 import HostVanDetail from "../pages/Host/HostVanDetail"
 import Layout from "../components/Layout"
 import HostLayout from "../components/HostLayout"
+import HostVanInfo from '../pages/Host/HostVanInfo';
 
 import "./server"
+import HostVanPhotos from '../pages/Host/HostVanPhotos';
+import HostVanPricing from '../pages/Host/HostVanPricing';
+import NotFound from '../pages/NotFound';
 
 function Main() {
   return (
@@ -30,8 +34,13 @@ function Main() {
             <Route path="income" element={<Income />} />
             <Route path="reviews" element={<Reviews />} />
             <Route path="vans" element={<HostVans />} />
-            <Route path="vans/:id" element={<HostVanDetail />} />
+            <Route path="vans/:id" element={<HostVanDetail />}>
+              <Route index element={<HostVanInfo />} />
+              <Route path="pricing" element={<HostVanPricing />} />
+              <Route path="photos" element={<HostVanPhotos />} />
+            </Route>
           </Route>
+          <Route path="*" element={<NotFound />}/>
         </Route>
       </Routes>
     </BrowserRouter>
