@@ -17,7 +17,14 @@ export default function Header() {
      */
     return (
         <header>
-            <Link className="site-logo" to="/">#VanLife</Link>
+         <Link className="site-logo" to="/">
+            <span className="logo-text" style={{ color: '#354B5E', textShadow: '.4px .4px .4px #1F2D3A' }}>Book</span>
+            <span className="logo-text" style={{ color: '#E3A008', textShadow: '.4px .4px .4px #B27D04' }}>Our</span>
+            <span className="logo-text" style={{ color: '#BF0603', textShadow: '.4px .4px .4px #780202' }}>Vans</span>
+        </Link>
+
+
+
             <nav>
                 <NavLink 
                     to="/host"
