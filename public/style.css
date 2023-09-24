@@ -65,6 +65,7 @@ footer {
     background-color: #161616;
     color: #AAAAAA;
     height: 74px;
+    /* width: 100vw;; */
     display: flex;
     flex-shrink: 0;
     justify-content: center;
