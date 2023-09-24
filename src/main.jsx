@@ -18,7 +18,7 @@ import "./server"
 import HostVanPhotos from '../pages/Host/HostVanPhotos';
 import HostVanPricing from '../pages/Host/HostVanPricing';
 import NotFound from '../pages/NotFound';
-
+import Login from '../pages/Login';
 function Main() {
   return (
     <BrowserRouter>
@@ -26,6 +26,8 @@ function Main() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route      path="login"      element={<Login />}    />
+          
           <Route path="vans" element={<Vans />} />
           <Route path="vans/:id" element={<VanDetail />} />
           

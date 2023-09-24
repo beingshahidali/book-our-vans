@@ -39,10 +39,9 @@ header {
 header .site-logo {
     color: black;
     margin-right: auto;
-    /* text-transform: uppercase; */
-    letter-spacing: -1px;
+    text-transform: uppercase;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 header a {
@@ -57,6 +56,10 @@ header a:hover {
     text-decoration: underline;
 }
 
+nav {
+    display: flex;
+}
+
 main {
     margin-bottom: 84px;
 }
@@ -65,12 +68,11 @@ footer {
     background-color: #161616;
     color: #AAAAAA;
     height: 74px;
-    /* width: 100vw;; */
     display: flex;
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
-    margin-top: 4vh;
+    margin-top: auto;
     font-weight: 500;
 }
 
@@ -100,6 +102,16 @@ footer {
 
 .link-button:hover {
     transform: translate(1px, 1px);
+}
+
+header .login-icon {
+    height: 18px;
+    width: 18px;
+}
+
+header .login-link {
+    display: inline-flex;
+    align-items: center;
 }
 
 /*** HOME PAGE ***/
@@ -471,4 +483,50 @@ i[class*='van-type-'] {
     width: 100%;
     background-color: #161616;
     color: white;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 27px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;    
+}
+
+.login-form > input {
+    border: 1px solid rgba(209, 213, 219);
+    height: 40px;
+    text-indent: 10px;
+    font-family: "Inter", sans-serif;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    font-weight: 400;
+}
+
+.login-form > input:focus {
+    outline: none;
+}
+
+.login-form > input:first-of-type {
+    border-radius: 6px 6px 0px 0px;
+}
+
+.login-form > input:last-of-type {
+    border-radius: 0px 0px 6px 6px;
+    border-top: none;
+}
+
+.login-form > button {
+    background-color: #FF8C38;
+    border: none;
+    border-radius: 6px;
+    height: 55px;
+    margin-top: 22px;
+    color: white;
+    font-family: "Inter", sans-serif;
 }
