@@ -12,7 +12,10 @@ dist
 dist-ssr
 *.local
 
-# Editor directories and files
+api.js
+server.js
+index.jsx
+
 .vscode/*
 !.vscode/extensions.json
 .idea
