@@ -1,0 +1,119 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('dark.png'); 
+  background-size: cover; 
+  background-attachment: fixed; 
+  position: relative;
+  color: #202026;
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none;
+  user-select: none; 
+
+ 
+}
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: rgb(232, 223, 223);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 0.4px black; 
+  -webkit-text-fill-color: rgb(232, 223, 223); 
+  text-stroke: 1px black; 
+  text-fill-color: rgb(232, 223, 223);
+}
+
+
+
+p {
+  font-size: 1.6rem;
+}
+
+small {
+  font-size: 1.2rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width:68vw;
+  padding: 40px;
+}
+
+.title {
+  font-size: 4.4rem;
+  text-align: center
+}
+
+.form {
+  display:grid;
+}
+
+.label {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+}
+
+.input {
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+  line-height: 2.8rem;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.button {
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(0,0,0,0.75);
+  border-radius: 20px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 250ms;
+}
+
+.button:hover {
+  background-color: rgba(0,0,0,0.85);
+}
+
+@media (min-width:786px){
+  .form {
+      grid-template-columns: auto 1fr auto;
+      grid-gap: 1rem;
+      align-items: center;
+  }
+  
+  .input {
+      margin-bottom: 0;
+  }
+}
+
+.card-list {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.outer{
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 20px;
+  
+  
+}
