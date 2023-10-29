@@ -59,7 +59,6 @@ export default function Vans() {
             return prevParams
         })
     }
-
     if (loading) {
         return <h1>Loading...</h1>
     }
